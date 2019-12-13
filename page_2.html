@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Top Secret</title>
+  </head>
+
+  <body class="text-center" onload="security()">
+       
+    <div class="container">
+        <h1 id="warning" class="text-danger">For Your Eyes Only</h1>
+                <p id="security"></p>
+                <p>
+                This powerful machine is used to encrypt or decrypt secret messages.  It's named after one of 
+                the most successful encryption machines used by the German military in WW II named "The Enigma Machine".  
+                The Enigma Machine was believed to be unbreakable and helped to advance Hitlers interest until
+                a machine was captured by Allied forces.  
+                </p>
+    </div>
+
+    <div class="container jumbotron">
+        <h3>Enter your message:</h3> 
+            <button  type="button" id="type" class="btn btn-secondary" onclick="enterText(),typewriter()">Click to enter message</button>
+                <p id="ans"></p>
+                <p id="getCode"></p> 
+            <button type="button" class="btn btn-warning"   onclick="encode(),display()">Encrypt</button> 
+                <p class="code" id="encode"></p>
+    </div> 
+
+    <div class="container jumbotron">
+        <h3> Enter your code:</h3> 
+            <button type="button"  class="btn btn-secondary" onclick="enterCode(),typewriter()">Click to enter encryption</button>
+                <p id="getCode"></p> 
+                <p id="ans_2"></p>
+            <button type="button" class="btn btn-warning" onclick="decode(),display()">Decrypt</button> 
+                <p class="code" id="decode"></p> 
+    </div>       
+            <br>
+            <br>
+  
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

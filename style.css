@@ -1,0 +1,35 @@
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+#kite {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+#warning {
+    font-family: -apple-system, BlinkMacSystemFont;
+}
+
+h3 {
+    font-family: monospace;
+}
+
+#security {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#kite-footer {
+    font-size: medium;
+}
+
+.code {
+    color: green;
+}
