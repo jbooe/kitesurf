@@ -22,8 +22,15 @@
     </div>
 
     <div class="container jumbotron">
+      <h2 class="bg-info text-light">To Encrypt a Message</h2>
+      <br>
+      <p id="directions">
+        Click the Enter Message button and type your message in the pop up box.  Click Ok and your message will 
+        be displayed.  Next, click the Encrypt button and your encrypted message will be displayed. Copy your message
+        and send a secure unbreakable message.
+      </p>
         <h3>Enter your message:</h3> 
-            <button  type="button" id="type" class="btn btn-secondary" onclick="enterText(),typewriter()">Click to enter message</button>
+            <button  type="button" id="type" class="btn btn-secondary" onclick="enterText(),typewriter()">click to Enter Message</button>
                 <p id="ans"></p>
                 <p id="getCode"></p> 
             <button type="button" class="btn btn-warning"   onclick="encode(),display()">Encrypt</button> 
@@ -31,8 +38,14 @@
     </div> 
 
     <div class="container jumbotron">
+      <h2 class="bg-info text-light">To Decrypt a Coded Message</h2>
+      <br>
+      <p id="directions">
+        Click the Enter Encryption button and enter the coded message in the pop up box.  Click Ok and your coded message will 
+        be displayed.  Next, click the Decrypt button and the coded message will be interpreted and displayed. 
+      </p>
         <h3> Enter your code:</h3> 
-            <button type="button"  class="btn btn-secondary" onclick="enterCode(),typewriter()">Click to enter encryption</button>
+            <button type="button"  class="btn btn-secondary" onclick="enterCode(),typewriter()">click to Enter Encryption</button>
                 <p id="getCode"></p> 
                 <p id="ans_2"></p>
             <button type="button" class="btn btn-warning" onclick="decode(),display()">Decrypt</button> 
